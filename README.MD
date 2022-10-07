@@ -1,85 +1,27 @@
-<div align="center">
-  <img src="https://cdn.rawgit.com/yobryon/ngx-barcode/master/docs/assets/ngx-barcode.svg" width="200px" alt="ngx-barcode">
-  <h1 align="center">ngx-barcode</h1>
-  <p>A barcode component for Angular4+.</p>
-</div>
+# NgxBarcode
 
-___
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.19.
 
-An angular component for Angular 4+ for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+## Development server
 
-## Demo 
-Basic [demo](https://yobryon.github.io/ngx-barcode/demo/).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Features
-- supports all barcode formats provided by JsBarcode
-  - CODE128
-  - EAN
-  - CODE39
-  - ITF-14
-  - MSI
-  - Pharmacode
-  - Codabar
+## Code scaffolding
 
-## Installation
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-To use ngx-barcode in your project, install it via npm:
+## Build
 
-```bash
-$ npm install ngx-barcode --save
-```
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Usage
+## Running unit tests
 
-Import the NgxBarcodeModule into your desired module:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+## Running end-to-end tests
 
-import { AppComponent } from './app.component';
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-// Import ngx-barcode module
-import { NgxBarcodeModule } from 'ngx-barcode';
+## Further help
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgxBarcodeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
-Once the library is imported, you can use the ngx-barcode component in your Angular application:
-
-```xml
-<!-- Adding a barcode in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<ngx-barcode [bc-value]="value" [bc-display-value]="true"></ngx-barcode>
-```
-
-## Development
-
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
-
-## License
-
-MIT © [Bryon Williams](mailto:bryon.williams@live.com)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
